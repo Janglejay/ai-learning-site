@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 443" width="520" height="443" role="img" aria-labelledby="title description">
+  <title id="title">AI 学习总路线</title>
+  <desc id="description">主线依次为 AI 通识和共同先修、经典 AI 与概率推理、机器学习与深度学习、决策与大模型、应用工程与毕业项目。感知与具身、检索推荐与知识图谱是并行方向。Agent 开发、评测与平台是重点专项。</desc>
+  <style>
+    svg { font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .background { fill: #f0f6f4; stroke: #d5e3df; }
+    .box { fill: #fff; stroke: #aac6bf; stroke-width: 1.5; }
+    .focus { fill: #e0f3ec; stroke: #167e69; stroke-width: 2; }
+    .chain,.branch { fill: none; stroke: #507971; stroke-width: 2; }
+    .branch { stroke-dasharray: 5 4; }
+    .arrow { fill: #507971; }
+    .heading { fill: #37665d; font-size: 16px; font-weight: 650; }
+    .label { fill: #1a3530; font-size: 19px; font-weight: 650; }
+    .detail { fill: #345953; font-size: 16px; }
+    @media (prefers-color-scheme: dark) {
+      .background { fill: #172625; stroke: #395550; }
+      .box { fill: #203735; stroke: #5f8981; }
+      .focus { fill: #244d43; stroke: #8dd8c6; }
+      .chain,.branch { stroke: #90bdb4; }
+      .arrow { fill: #90bdb4; }
+      .heading,.detail { fill: #b9dbd4; }
+      .label { fill: #effbf9; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path class="arrow" d="M0 0L10 5 0 10Z"/>
+    </marker>
+  </defs>
+  <rect class="background" x="1" y="1" width="518" height="441" rx="16"/>
+  <text class="heading" x="22" y="32">AI 学习主线</text>
+  <text class="heading" x="310" y="165">并行方向</text>
+  <text class="heading" x="310" y="344">重点专项</text>
+  <g marker-end="url(#arrow)">
+    <path class="chain" d="M145 100V124"/>
+    <path class="chain" d="M145 180V204"/>
+    <path class="chain" d="M145 260V284"/>
+    <path class="chain" d="M145 340V364"/>
+    <path class="branch" d="M268 232H281Q288 232 288 225V212Q288 205 295 205H310"/>
+    <path class="branch" d="M268 232H281Q288 232 288 239V266Q288 273 295 273H310"/>
+    <path class="branch" d="M268 392H310"/>
+  </g>
+  <g>
+    <rect class="box" x="22" y="44" width="246" height="56" rx="9"/>
+    <text class="label" x="35" y="67">A–B · AI 通识与共同先修</text>
+    <text class="detail" x="35" y="89">问题建模 · 编程与数学</text>
+    <rect class="box" x="22" y="124" width="246" height="56" rx="9"/>
+    <text class="label" x="35" y="147">C–D · 经典 AI 与概率</text>
+    <text class="detail" x="35" y="169">搜索 · 逻辑 · 规划 · 推理</text>
+    <rect class="box" x="22" y="204" width="246" height="56" rx="9"/>
+    <text class="label" x="35" y="227">E–F · 机器学习与深度学习</text>
+    <text class="detail" x="35" y="249">统计学习 · 神经网络 · 生成模型</text>
+    <rect class="box" x="22" y="284" width="246" height="56" rx="9"/>
+    <text class="label" x="35" y="307">G–H · 决策与大模型</text>
+    <text class="detail" x="35" y="329">强化学习 · 控制 · NLP 与 LLM</text>
+    <rect class="box" x="22" y="364" width="246" height="56" rx="9"/>
+    <text class="label" x="35" y="387">K–M · 应用、工程与项目</text>
+    <text class="detail" x="35" y="409">系统上线 · 研究与项目验收</text>
+  </g>
+  <g>
+    <rect class="box" x="310" y="177" width="188" height="56" rx="9"/>
+    <text class="label" x="323" y="200">I · 感知与具身智能</text>
+    <text class="detail" x="323" y="222">多模态 · 机器人</text>
+    <rect class="box" x="310" y="245" width="188" height="56" rx="9"/>
+    <text class="label" x="323" y="268">J · 检索与推荐</text>
+    <text class="detail" x="323" y="290">排名 · 知识图谱</text>
+    <rect class="focus" x="310" y="364" width="188" height="56" rx="9"/>
+    <text class="label" x="323" y="387">Agent 重点路线</text>
+    <text class="detail" x="323" y="409">开发 · 评测 · 自建平台</text>
+  </g>
+</svg>

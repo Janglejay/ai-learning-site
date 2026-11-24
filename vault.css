@@ -22,6 +22,7 @@ h3{font-size:1.12rem;margin:1.3rem 0 .35rem}
 h4{margin:1.1rem 0 .35rem}ul,ol{padding-inline-start:1.5em;margin:.45rem 0 1rem}li{padding-block:.18rem}li ul,li ol{margin:.25rem 0 0}
 blockquote{border-left:3px solid var(--link);padding:.5rem 1rem;margin:1rem 0;background:var(--mint)}
 code{font-family:ui-monospace,monospace;background:var(--mint);padding:.1em .25em;border-radius:.3em}pre{padding:1rem;background:var(--mint);overflow:auto;border-radius:.6rem}pre code{padding:0}
+.roadmap{display:block;width:min(100%,36rem);height:auto;margin:0 0 1rem}
 hr{border:0;border-top:1px solid var(--edge);margin:2rem 0}.table{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:.5rem 0 1rem;text-align:left}th,td{border:1px solid var(--edge);min-width:6rem;padding:.4rem .6rem}th{background:var(--mint)}
 .review{font-size:.8rem;display:inline-block;color:var(--link);background:var(--mint);border-radius:.35rem;padding:.1rem .5rem;font-weight:650;margin:0 0 .45rem}
 .backlinks{border-top:1px solid var(--edge);margin-top:2rem;padding-top:1rem}summary{cursor:pointer;font-weight:650}
