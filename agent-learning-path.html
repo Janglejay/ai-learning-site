@@ -1,109 +1,40 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Agent 重点路线 · AI Learning Vault</title><link rel="stylesheet" href="vault.css"></head>
-<body><header><a class="brand" href="index.html">AI Learning Vault</a><nav><a href="index.html">首页</a><a href="agent-learning-path.html">Agent 路线</a><a href="two-week-foundations-and-practice.html">两周练习</a></nav></header><main><p class="status">样板 · 待审核</p><h1>Agent 重点路线</h1>
-<p>保留原路线六站。样板范围之外的节点和资料以文字保留，全文迁移后再链接。</p>
-<h2>1. 最小 Agent</h2>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent 重点路线 · AI Learning Vault</title><link rel="stylesheet" href="vault.css">
+<script defer src="search-index.js"></script><script defer src="vault.js"></script></head>
+<body><a class="skip" href="#content">跳到正文</a>
+<header class="site-header"><div class="page bar"><a class="brand" href="index.html">AI Learning Vault</a>
+<nav aria-label="学习导航"><a href="index.html">AI 总路线</a><a href="52-week-study-plan.html">52 周计划</a><a href="agent-learning-path.html" aria-current="page">Agent 专项</a><a href="resource-catalog.html">资料目录</a><a href="curriculum-framework-and-research-basis.html">框架对照</a></nav></div></header>
+<div class="page"><div class="utility"><div class="crumbs"><a href="index.html">AI Learning Vault</a><span aria-hidden="true">/</span><span>学习路线</span></div>
+<div class="search" role="search"><label for="lookup">查找笔记</label>
+<input id="lookup" type="search" placeholder="标题、编号或主题" disabled>
+<div id="lookup-results" class="results" aria-live="polite" hidden></div></div></div>
+<main id="content"><p class="review">待审核</p><h1 id="agent-重点路线">Agent 重点路线</h1>
+<p><a href="k4-workflows-bounded-agents-and-memory.html">K4 工作流、有界 Agent 与记忆</a> 是入口。<a href="a2-agents-and-task-environments.html">A2 Agent 与任务环境</a> 提供智能体与环境的基础，K7–K12 展开专项，L5/L6 接到自建平台。已有后端经验可从第一站开始，根据知识点的先修回补。</p>
+<p>贯穿项目：考证开源项目的版本能力、给出证据链接。用同一批题比较无工具、固定工作流、手写 Agent 和 DSH。</p>
+<p>入门练习见 <a href="two-week-foundations-and-practice.html">两周理论与动手练习</a>，完整专题对照见 <a href="agent-knowledge-map.html">Agent 知识分支与 DSH 覆盖边界</a>。</p>
+<h2 id="1-最小-agent">1. 最小 Agent</h2>
 <p>已有后端经验可以从这一站开做。补齐任务环境、一次模型请求和工具契约。手写两个只读工具、一个循环、一个预算终点。交付成功与失败轨迹。</p>
-<h3>知识点</h3>
-<ul>
-<li><a href="a2-agents-and-task-environments.html">A2 Agent 与任务环境</a></li>
-<li>A3 人机协作与任务边界（待全量迁移）</li>
-<li><a href="b1-python-numpy-and-reproducibility.html">B1 Python、NumPy 与复现</a></li>
-<li>H7 解码、推理模型与测试时计算（待全量迁移）</li>
-<li><a href="k1-prompting-structured-outputs-and-output-contracts.html">K1 提示、结构化输出与契约</a></li>
-<li><a href="k3-tool-calling-and-integration-protocols.html">K3 工具调用与接入协议</a></li>
-<li><a href="k4-workflows-bounded-agents-and-memory.html">K4 工作流、有界 Agent 与记忆</a></li>
-</ul>
-<h3>资料</h3>
-<ul>
-<li><a href="hf-agent.html">Agents Course</a></li>
-<li><a href="agents.html">Building effective agents</a></li>
-<li>ReAct 原论文（待全量迁移）</li>
-</ul>
-<h2>2. 公开资料助手</h2>
+<p>知识点：<a href="a2-agents-and-task-environments.html">A2 Agent 与任务环境</a> · <a href="a3-human-ai-collaboration-and-task-boundaries.html">A3 人机协作与任务边界</a> · <a href="b1-python-numpy-and-reproducibility.html">B1 Python、NumPy 与复现</a> · <a href="h7-decoding-reasoning-models-and-test-time-compute.html">H7 解码、推理模型与测试时计算</a> · <a href="k1-prompting-structured-outputs-and-output-contracts.html">K1 提示、结构化输出与契约</a> · <a href="k3-tool-calling-and-integration-protocols.html">K3 工具调用与接入协议</a> · <a href="k4-workflows-bounded-agents-and-memory.html">K4 工作流、有界 Agent 与记忆</a></p>
+<ul><li><a href="hf-agent.html">Agents Course</a></li><li><a href="agents.html">Building effective agents</a></li><li><a href="react.html">ReAct 原论文</a></li></ul>
+<h2 id="2-公开资料助手">2. 公开资料助手</h2>
 <p>用同一批版本考证题接入索引、引用、规划与记忆。保留资料冲突、证据不足和故障用例。</p>
-<h3>知识点</h3>
-<ul>
-<li><a href="c6-automated-planning-and-scheduling.html">C6 自动规划与调度</a></li>
-<li>J1 信息检索与排名评测（待全量迁移）</li>
-<li><a href="k2-retrieval-augmented-generation-citations-and-knowledge-governance.html">K2 RAG、引用与知识治理</a></li>
-<li>K8 Agent 推理与规划实验（待全量迁移）</li>
-<li>K9 上下文与长期记忆策略（待全量迁移）</li>
-</ul>
-<h3>资料</h3>
-<ul>
-<li><a href="cs276.html">CS276 Information Retrieval and Web Search</a></li>
-<li><a href="ir-book.html">Introduction to Information Retrieval</a></li>
-<li><a href="rag.html">Retrieval-Augmented Generation 原论文</a></li>
-<li>LLM Agent 规划综述（待全量迁移）</li>
-</ul>
-<h2>3. 固定基线和评测</h2>
+<p>知识点：<a href="c6-automated-planning-and-scheduling.html">C6 自动规划与调度</a> · <a href="j1-information-retrieval-and-ranking-evaluation.html">J1 信息检索与排名评测</a> · <a href="k2-retrieval-augmented-generation-citations-and-knowledge-governance.html">K2 RAG、引用与知识治理</a> · <a href="k8-agent-reasoning-and-planning-experiments.html">K8 Agent 推理与规划实验</a> · <a href="k9-context-and-long-term-memory-strategies.html">K9 上下文与长期记忆策略</a></p>
+<ul><li><a href="cs276.html">CS276 Information Retrieval and Web Search</a></li><li><a href="ir-book.html">Introduction to Information Retrieval</a></li><li><a href="rag.html">Retrieval-Augmented Generation 原论文</a></li><li><a href="agent-planning.html">LLM Agent 规划综述</a></li></ul>
+<h2 id="3-固定基线和评测">3. 固定基线和评测</h2>
 <p>比较单次调用、固定工作流和手写 Agent。先定正确率、引用支持、费用与时延，再让 DSH 用同一套题。防护和人工接管同时验收。</p>
-<h3>知识点</h3>
-<ul>
-<li><a href="e5-generalization-theory-and-model-evaluation.html">E5 泛化理论与模型评估</a></li>
-<li><a href="d5-causal-inference-and-experimental-design.html">D5 因果推断与实验思维</a></li>
-<li><a href="k5-application-evaluation-traces-and-guardrails.html">K5 应用评估、轨迹与防护</a></li>
-<li><a href="k12-agent-evaluation-and-reproducible-controlled-experiments.html">K12 Agent 评测与可重复对照实验</a></li>
-<li>M1 责任、隐私与公平（待全量迁移）</li>
-<li>M2 治理与风险验证（待全量迁移）</li>
-</ul>
-<h3>资料</h3>
-<ul>
-<li><a href="agent-evals.html">Demystifying evals for AI agents</a></li>
-<li><a href="agent-eval-survey.html">Evaluation and Benchmarking of LLM Agents</a></li>
-<li><a href="owasp-agent.html">OWASP Agentic Applications 风险目录</a></li>
-</ul>
-<h2>4. 读 DSH 并跑对照</h2>
+<p>知识点：<a href="e5-generalization-theory-and-model-evaluation.html">E5 泛化理论与模型评估</a> · <a href="d5-causal-inference-and-experimental-design.html">D5 因果推断与实验思维</a> · <a href="k5-application-evaluation-traces-and-guardrails.html">K5 应用评估、轨迹与防护</a> · <a href="k12-agent-evaluation-and-reproducible-controlled-experiments.html">K12 Agent 评测与可重复对照实验</a> · <a href="m1-responsibility-privacy-and-fairness.html">M1 责任、隐私与公平</a> · <a href="m2-governance-and-risk-validation.html">M2 治理与风险验证</a></p>
+<ul><li><a href="agent-evals.html">Demystifying evals for AI agents</a></li><li><a href="agent-eval-survey.html">Evaluation and Benchmarking of LLM Agents</a></li><li><a href="owasp-agent.html">OWASP Agentic Applications 风险目录</a></li></ul>
+<h2 id="4-读-dsh-并跑对照">4. 读 DSH 并跑对照</h2>
 <p>顺着事件追踪一次工具调用，把手写循环映射到 DSH。自己写一个小工具，固定依赖版本，用同题对照。</p>
-<h3>知识点</h3>
-<ul>
-<li><a href="k7-harness-runtime-and-plugins.html">K7 Harness 运行时与插件</a></li>
-<li><a href="k3-tool-calling-and-integration-protocols.html">K3 工具调用与接入协议</a></li>
-<li><a href="k12-agent-evaluation-and-reproducible-controlled-experiments.html">K12 Agent 评测与可重复对照实验</a></li>
-</ul>
-<h3>资料</h3>
-<ul>
-<li><a href="dsh-arch.html">DeepSeek Harness 架构</a></li>
-<li><a href="dsh-sdk.html">DeepSeek Harness SDK 协议</a></li>
-</ul>
-<h2>5. 搭自己的平台</h2>
+<p>知识点：<a href="k7-harness-runtime-and-plugins.html">K7 Harness 运行时与插件</a> · <a href="k3-tool-calling-and-integration-protocols.html">K3 工具调用与接入协议</a> · <a href="k12-agent-evaluation-and-reproducible-controlled-experiments.html">K12 Agent 评测与可重复对照实验</a></p>
+<ul><li><a href="dsh-arch.html">DeepSeek Harness 架构</a></li><li><a href="dsh-sdk.html">DeepSeek Harness SDK 协议</a></li></ul>
+<h2 id="5-搭自己的平台">5. 搭自己的平台</h2>
 <p>完成任务列表、事件流、停止、重启核对、审批与运行成本。用模拟服务证明超时和未知结果有明确处理。</p>
-<h3>知识点</h3>
-<ul>
-<li><a href="l4-data-engineering-and-reproducible-experiment-packages.html">L4 数据工程与可复现实验包</a></li>
-<li><a href="l5-agent-durable-execution-and-control-plane.html">L5 Agent 持久执行与控制面</a></li>
-<li>L3 MLOps、版本与发布（待全量迁移）</li>
-<li>L6 Agent 生产可靠性与经济性（待全量迁移）</li>
-<li>M4 毕业项目：公开资料助手（待全量迁移）</li>
-</ul>
-<h3>资料</h3>
-<ul>
-<li><a href="dsh-sdk.html">DeepSeek Harness SDK 协议</a></li>
-<li><a href="dsh-super.html">DSH Super-agent 原型</a></li>
-<li>The Site Reliability Workbook：Implementing SLOs（待全量迁移）</li>
-<li><a href="otel-gen.html">OpenTelemetry GenAI 语义约定</a></li>
-</ul>
-<h2>6. 按方向深入</h2>
+<p>知识点：<a href="l4-data-engineering-and-reproducible-experiment-packages.html">L4 数据工程与可复现实验包</a> · <a href="l5-agent-durable-execution-and-control-plane.html">L5 Agent 持久执行与控制面</a> · <a href="l3-mlops-versioning-and-release-management.html">L3 MLOps、版本与发布</a> · <a href="l6-agent-reliability-and-economics-in-production.html">L6 Agent 生产可靠性与经济性</a> · <a href="m4-capstone-public-source-research-assistant.html">M4 毕业项目：公开资料助手</a></p>
+<ul><li><a href="dsh-sdk.html">DeepSeek Harness SDK 协议</a></li><li><a href="dsh-super.html">DSH Super-agent 原型</a></li><li><a href="sre.html">The Site Reliability Workbook：Implementing SLOs</a></li><li><a href="otel-gen.html">OpenTelemetry GenAI 语义约定</a></li></ul>
+<h2 id="6-按方向深入">6. 按方向深入</h2>
 <p>先迁移到代码或模拟工单，再按兴趣做多 Agent、模型后训练、多智能体 RL、具身实验或本地推理部署。</p>
-<h3>知识点</h3>
-<ul>
-<li>K6 AI 辅助研发与验证（待全量迁移）</li>
-<li>K10 LLM 多 Agent 编排与互操作（待全量迁移）</li>
-<li>K11 浏览器、桌面与领域 Agent（待全量迁移）</li>
-<li>H9 Agent 模型后训练与适应（待全量迁移）</li>
-<li>G5 多智能体强化学习（待全量迁移）</li>
-<li>I5 具身学习与仿真迁移（待全量迁移）</li>
-<li>L2 推理服务与模型压缩（待全量迁移）</li>
-</ul>
-<h3>资料</h3>
-<ul>
-<li><a href="berth-adv.html">Advanced LLM Agents 2025</a></li>
-<li>Agentic AI 2025（待全量迁移）</li>
-<li>SWE-bench 基准（待全量迁移）</li>
-<li>Agent2Agent 规范（待全量迁移）</li>
-<li>TRL 后训练指南（待全量迁移）</li>
-<li>PettingZoo 多智能体环境（待全量迁移）</li>
-<li>Modern Robotics: Mechanics, Planning, and Control（待全量迁移）</li>
-<li>vLLM 文档（待全量迁移）</li>
-</ul><h2>反向链接</h2><ul><li><a href="index.html">AI 学习库 · Obsidian 样板</a></li></ul></main><footer>AI Learning Vault · dbafcd2</footer></body></html>
+<p>知识点：<a href="k6-ai-assisted-software-engineering-and-verification.html">K6 AI 辅助研发与验证</a> · <a href="k10-llm-multi-agent-orchestration-and-interoperability.html">K10 LLM 多 Agent 编排与互操作</a> · <a href="k11-browser-desktop-and-domain-specific-agents.html">K11 浏览器、桌面与领域 Agent</a> · <a href="h9-agent-model-post-training-and-adaptation.html">H9 Agent 模型后训练与适应</a> · <a href="g5-multi-agent-reinforcement-learning.html">G5 多智能体强化学习</a> · <a href="i5-embodied-learning-and-sim-to-real-transfer.html">I5 具身学习与仿真迁移</a> · <a href="l2-inference-serving-and-model-compression.html">L2 推理服务与模型压缩</a></p>
+<ul><li><a href="berth-adv.html">Advanced LLM Agents 2025</a></li><li><a href="berth25.html">Agentic AI 2025</a></li><li><a href="swebench.html">SWE-bench 基准</a></li><li><a href="a2a.html">Agent2Agent 规范</a></li><li><a href="trl.html">TRL 后训练指南</a></li><li><a href="pettingzoo.html">PettingZoo 多智能体环境</a></li><li><a href="modern-robot.html">Modern Robotics: Mechanics, Planning, and Control</a></li><li><a href="vllm.html">vLLM 文档</a></li></ul></main>
+<footer>AI Learning Vault<span>源版本 <code>695e2c534405</code></span></footer></div></body></html>
